@@ -6,25 +6,13 @@
  
  div.appendChild(newUL);
 
- var newli = document.createElement('li');
- newli.innerHTML = "Lorem ipsum dolor sit amet, consectetur.";
- newUL.appendChild(newli);
+ var tableau = ["fraise","pomme","abricot","peche","cerise",]; 
 
- var newli2 = document.createElement('li');
- newli2.innerHTML = "Lorem ipsum dolor sit";
- newUL.appendChild(newli2);
-
- var newli3 = document.createElement('li');
- newli3.innerHTML = "Lorem ipsum dolor sit amet, consectetur.";
- newUL.appendChild(newli3);
-
- var newli4 = document.createElement('li');
- newli4.innerHTML = "Lorem ipsum dolor sit amet, consectetur.";
- newUL.appendChild(newli4);
-
- var newli5 = document.createElement('li');
- newli5.innerHTML = "Lorem ipsum dolor sit amet, consectetur.";
- newUL.appendChild(newli5);
+ for ( var i = 0; i < 5; i++){
+ 	  var newLI = document.createElement("li");
+ 	  newLI.innerHTML = tableau[i];
+ 	  newUL.appendChild(newLI);
+ }
 
 
 
